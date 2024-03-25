@@ -1,0 +1,183 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "kavoon";
+  src: url("./fonts//Kavoon/Kavoon-Regular.ttf");
+}
+
+section {
+  padding: 0 2em;
+}
+
+.section-title {
+  margin: 0 auto;
+  padding: 0.5em 0;
+  font-size: 4em;
+  color: white;
+  text-align: center;
+  font-family: "kavoon";
+}
+
+.sub-section {
+  margin: 0 2em;
+}
+.sub-section.reverse {
+  margin: 0 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.sub-section-title {
+  font-size: 2em;
+  color: white;
+  font-family: "kavoon";
+}
+.sub-section-paragraph {
+  font-size: 1.5em;
+  color: white;
+  width: 60%;
+  text-align: justify;
+}
+
+.fullpage {
+  height: 100vh;
+  width: 100%;
+}
+
+#section-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#gumbo-logo-image {
+  margin: auto;
+  min-width: 150px;
+  width: 80%;
+  object-fit: cover;
+  animation: bounceAnimation 2s ease infinite;
+}
+
+#section-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+#mint-detail-img {
+  min-width: 150px;
+  width: 30%;
+  object-fit: cover;
+  transform-origin: bottom center;
+  animation: swingAnimation 2s ease infinite;
+}
+
+@keyframes swingAnimation {
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bounceAnimation {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bg-orange-1 {
+  background-color: #ff8303;
+}
+
+.bg-orange-2 {
+  background-color: #ff8702;
+}
+
+.bg-orange-grad-1 {
+  width: 100%;
+  background-image: linear-gradient(#ff8303, #ff8702);
+}
+
+.bg-orange-grad-2 {
+  background-image: linear-gradient(#ff8702, #ff8303);
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.split > div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 49.8%;
+}
+
+.split > div > p {
+  text-align: justify;
+}
+
+#discord-section {
+  padding-bottom: 2em;
+  display: flex;
+  direction: row;
+}
+#discord-section > div {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "kavoon";
+}
+
+#discord-section > div a {
+  color: white;
+}
+
+#section-3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#magic-mint-image {
+  width: 50%;
+}
